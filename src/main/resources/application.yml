@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mobile-store-reactive
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mobile_store_db
+    username: postgres
+    password: postgres
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.r2dbc: INFO
+    org.springframework.data.r2dbc: INFO
